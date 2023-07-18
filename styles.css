@@ -1,0 +1,242 @@
+body{
+    margin: 0;
+    color: white;
+    background-color: black;
+}
+.container{
+    margin-top: 5%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    min-width: 400px;
+  
+    background-image: linear-gradient(135deg, rgb(96, 127, 185), rgb(104, 145, 233));
+}
+.addbutton{
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.deletebutton{
+    font-size: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.deletebutton:hover{
+    background-color: black;
+}
+.addbutton:hover{
+    background-color: black;
+}
+.heading{
+    text-align: center;
+    font-size: bold;
+    color: rgb(3, 31, 58);
+    margin-bottom: 10px;
+}
+.input-div{
+    display: flex;
+    border-radius: 18px;
+    border: 2px solid white;
+   
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+input, i{
+    position: static;
+    font-size: 40px;
+    left: 5px;
+    width: 10%;
+    color: white;
+}
+.input_div , input{
+    border: none;
+    background-color: transparent;
+    height: 40px;
+    width: 70%;
+    top: -5px;
+    font-size: 20px;
+    border-radius: 18px;
+    outline: none;
+}
+.input_div,button{
+    padding: 0;
+    right: 10px;
+    position: relative;
+    border: none;
+    width: 10%;
+    background-color: transparent;
+    color: white;
+}
+
+.completed-div{
+    margin-top: 10px;
+    display: flex;
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+.uncompleted{
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.completed-div div span{
+    margin-left: 10px;
+
+}
+.completed-div div i{
+  position: static;
+  margin-left: 11px;
+  margin-right: -11px
+
+}
+.completed-left-div{
+    display: flex;
+    flex-direction: row;
+    left: 10px;
+    justify-content: left;
+    align-items: center;
+    width: 40%;
+    font-size: 20px;
+}
+.completed-div :hover{
+  color: rgb(3, 31, 58);
+}
+.completed-left-div .tick{
+  left: 10px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul li {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  ul li:nth-child(2n){
+    background-image: linear-gradient(267deg,rgb(83, 83, 172),rgb(43, 94, 94));
+  }
+  ul li:hover {
+    background: #303e6d;
+  }
+  #list input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #list label {
+    position: relative;
+    cursor: pointer;
+  }
+  #container > i{
+    display: inline;
+    color: rgb(33, 0, 153);
+  }
+  #list label:before {
+    content:'';
+    /* -webkit-appearance: none; */
+    background-color: transparent;
+    border: 2px solid #0079bf;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  #list input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  #list input:checked + label:before {
+    background: #0079bf;
+  } 
+  #list input:checked + label {
+    text-decoration: line-through;
+    color:  rgb(3, 31, 58);
+  }
+  .delete {
+    font-size: 20px;
+    padding: 5px 0px;
+    border-radius: 50%;
+    color: rgb(224, 217, 217);
+    cursor: pointer;
+  }
+
+  .deleteAll:hover{
+    
+    color: rgb(3, 31, 58);
+  }
+  #end{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+
+  }
+  #end-right{
+    display: flex;
+    width: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    flex-direction: row;
+    justify-content: right;
+
+  }
+  #task{
+    display: flex;
+    
+  }
+  #task p{
+    margin-left: 20px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <!-- add fevricon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Connect awsome front for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Link to css file -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+   <!--Link to the javaScript file  -->
+   <script type="text/javaScript" src="todo.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- heading for to list -->
+    <div class="heading">
+      <h1>Dipen's To-Do-List </h1>
+    </div>
+    <div class="input-div">
+      
+      <!-- Input box for to do's -->
+      <input type="text" placeholder="Enter your Todo's..." id="input">
+      <!-- add button -->
+      <button type="submit" class="add addbutton">+</button>
+      
+    </div>
+     <div class="completed-div"> 
+       <!-- completed task  -->
+      <!-- tick icon -->
+       <div class="completed-left-div">
+        <i class="fa-solid fa-check-double tick" style="font-size: 15px;"></i>
+        <span class="completedAll">Complete All Tasks</span>
+      </div>
+      
+      <p class="uncompleted All">Incomplete All Tasks</p>
+    </div> 
+    <hr>
+    <div class="list_item">
+      <ul id="list">
+        <!-- <li>
+          <input type="checkbox" id="task1" data-id="12" class="custom-checkbox">
+          <label for="task1">Buy groceries</label>
+          <button class="delete deletebutton" data-id="12">x</button>
+        </li> -->
+      </ul>
+    </div>
+    <hr>
+    <div id="end">
+      <div id="task">
+        <p>(<span id="total_task">0</span>) Total Tasks</p>
+        <p>(<span id="completed">0</span>)Completed Tasks</p>
+        <p>(<span id="incomplited">0</span>)Incompleted Tasks</p>
+      </div>
+      <div id="end-right">
+        <!-- <p class="uncompleted All">Uncompleted All</p> -->
+        <p class="deleteAll">Delete All</p>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
